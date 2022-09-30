@@ -9,6 +9,9 @@ collections:
   - name: "Menus"
     label: "menus"
     folder: "public/posts/menus"
+    identifier_field: "label"
+    slug: "{{slug}}"
+    extension: "json"
     create: false    
     editor:
       preview: false

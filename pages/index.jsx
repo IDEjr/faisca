@@ -1,7 +1,6 @@
 import Header from './../components/header';
 import Box from './../components/box';
-
-import styles from '../styles/Home.module.css'
+import Wait from './../components/wait'
 
 import { handleJSONfiles } from '../functions/jsonHandler';
 
@@ -22,9 +21,10 @@ export default function Home(props)
   return (
     <>
       <Header menus={menus}/>      
-      <Box vertical>
-        {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)} 
-      </Box>         
+      <Box type={"vertical"}>
+        {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)}        
+        <Wait/>
+      </Box>
     </>
   )
 }
