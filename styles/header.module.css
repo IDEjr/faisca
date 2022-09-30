@@ -40,7 +40,7 @@
     font-size: 1.11rem;
 
 
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right,white 0%, transparent 0%);
     /*border-image: radial-gradient(circle, white 0%, transparent 100%);*/
     border-image-slice: 1;
@@ -54,7 +54,7 @@
 
 .container_button:hover
 {
-    animation: border_linear 0.20s forwards;
+    animation: border_linear 0.25s forwards;
 }
 
 @keyframes border_linear {
@@ -62,20 +62,44 @@
 		border-image: linear-gradient(to right,white 0%, transparent 0%);
         border-image-slice: 1;
 	}
-    25% {
-		border-image: linear-gradient(to right,white 25%, transparent 0%);
+    10% {
+		border-image: linear-gradient(to right,white 10%, transparent 0%);
+        border-image-slice: 1;
+	}
+    20% {
+		border-image: linear-gradient(to right,white 20%, transparent 0%);
+        border-image-slice: 1;
+	}
+    30% {
+		border-image: linear-gradient(to right,white 30%, transparent 0%);
+        border-image-slice: 1;
+	}
+    40% {
+		border-image: linear-gradient(to right,white 40%, transparent 0%);
         border-image-slice: 1;
 	}
     50% {
 		border-image: linear-gradient(to right,white 50%, transparent 0%);
         border-image-slice: 1;
 	}
-    75% {
-		border-image: linear-gradient(to right,white 75%, transparent 0%);
+    60% {
+		border-image: linear-gradient(to right,white 60%, transparent 0%);
         border-image-slice: 1;
-	}     
+	}
+    70% {
+		border-image: linear-gradient(to right,white 70%, transparent 0%);
+        border-image-slice: 1;
+	}
+    80% {
+		border-image: linear-gradient(to right,white 80%, transparent 0%);
+        border-image-slice: 1;
+	}
+    90% {
+		border-image: linear-gradient(to right,white 90%, transparent 0%);
+        border-image-slice: 1;
+	}      
 	100% {
-		border-image: linear-gradient(to right,white 100%, white 0%);
+		border-image: linear-gradient(to right,white 100%, transparent 0%);
         border-image-slice: 1;
 
 	}
