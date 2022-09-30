@@ -11,8 +11,7 @@ collections:
     folder: "public/posts/header"
     identifier_field: "label"
     slug: "{{slug}}"
-    extension: "json"    
-    create: true
+    extension: "json"
     editor:
       preview: false
     fields:

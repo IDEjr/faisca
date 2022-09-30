@@ -6,11 +6,7 @@ import style from './../styles/header.module.css';
 
 export default function Header(props)
 {
-    const menus = [{label:'home', link:'/'},
-                   {label:'pag1', link:'/pag1'},
-                   {label:'pag2', link:'/pag2'},
-                   {label:'pag3', link:'/pag3'},
-                   {label:'pag4', link:'/pag4'}];
+    let { menus } = props;
 
     return(
         <>
