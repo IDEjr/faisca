@@ -6,6 +6,18 @@ locale: "pt"
 media_folder: public/posts
 public_folder: posts
 collections:
+  - name: "header"
+    label: "Header"      
+    folder: "public/posts/header"
+    identifier_field: "label"
+    slug: "{{slug}}"
+    extension: "json"    
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Nome", name: "label", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
   - name: "exemplo"
     label: "Exemplo"      
     folder: "public/posts/exemplo"

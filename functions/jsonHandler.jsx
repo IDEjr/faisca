@@ -1,4 +1,6 @@
+
 export function handleJSONfiles(filePath) {
+
     let posts = [];
     const fs = require("fs");
     const path = require("path");
@@ -16,6 +18,7 @@ export function handleJSONfiles(filePath) {
       });
     });
     return posts;
+    
   }
   
   export function handleJSONfile(filePath) {

@@ -1,35 +1,14 @@
+import style from './../styles/box.module.css';
 
-export default function Box(props)
+export default (props) =>
 {
     let child;
     if(!props.children) child = <></>;
-    else child = props.children;
-
-    let style;
-
-    if(!props.invert)
-    {
-        style = {
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            alignItems: "center",
-        }
-
-    }else
-    {
-        style = {
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            flexWrap: "wrap",
-        }
-    }
+    else child = props.children;    
 
     return(        
         
-        <div style={style}>
+        <div className={props.vertical ? style.vertical : style.default }>
             {child}
         </div>        
     )
