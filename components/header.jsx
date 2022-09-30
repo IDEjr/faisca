@@ -5,7 +5,7 @@ import style from './../styles/header.module.css';
 
 export default function Header(props)
 {
-    const menus = require('../public/posts/menus/menus.json');
+    let { menus } = props;
 
     return(
         <>
