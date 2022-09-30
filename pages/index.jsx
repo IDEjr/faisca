@@ -15,7 +15,7 @@ export function getStaticProps() {
     };
 }
 
-export default (props) =>
+export default function Home(props)
 {
   let { nomes, menus } = props;
 

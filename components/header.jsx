@@ -4,7 +4,7 @@ import Script from "next/script";
 
 import style from './../styles/header.module.css';
 
-export default (props) =>
+export default function Header(props)
 {
     let { menus } = props;
 
