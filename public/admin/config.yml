@@ -7,14 +7,12 @@ media_folder: public/posts
 public_folder: posts
 collections:
   - name: "Menus"
-    label: "menus"      
+    label: "menus"
     folder: "public/posts/menus"
-    widget: "list"
-    allow_add: false
     editor:
       preview: false
     fields:
-      - { label: "Nome", name: "label", widget: "string" }      
+      - { label: "Menus", name: "menu", widget: "list", file: "menus.json", fields: [{label: "Nome", name: "label", widget: "string"}]}      
   - name: "exemplo"
     label: "Exemplo"      
     folder: "public/posts/exemplo"
