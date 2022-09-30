@@ -1,16 +1,14 @@
 import react from 'react';
 import Link from 'next/link';
-import Script from "next/script";
 
 import style from './../styles/header.module.css';
 
 export default function Header(props)
 {
-    let { menus } = props;
+    const menus = require('../public/posts/menus/menus.json');
 
     return(
         <>
-            <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"/>        
             <div className={style.container} >
                 <div className={style.container_logo}>
                     Header Exemplo

@@ -8,20 +8,19 @@ import { handleJSONfiles } from '../functions/jsonHandler';
 export function getStaticProps() {
 
     const nomes = handleJSONfiles('./public/posts/exemplo');
-    const menus = handleJSONfiles('./public/posts/header');    
   
     return {
-      props: { nomes, menus },
+      props: { nomes },
     };
 }
 
 export default function Home(props)
 {
-  let { nomes, menus } = props;
+  let { nomes } = props;
 
   return (
     <>
-      <Header menus={menus}/>      
+      <Header/>      
       <Box vertical>
         {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)} 
       </Box>         

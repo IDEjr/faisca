@@ -6,12 +6,11 @@ locale: "pt"
 media_folder: public/posts
 public_folder: posts
 collections:
-  - name: "header"
-    label: "Header"      
-    folder: "public/posts/header"
-    identifier_field: "label"
-    slug: "{{slug}}"
-    extension: "json"
+  - name: "Menus"
+    label: "menus"      
+    folder: "public/posts/menus"
+    widget: "list"
+    allow_add: false
     editor:
       preview: false
     fields:
