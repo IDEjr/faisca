@@ -8,7 +8,8 @@ public_folder: posts
 collections:
   - name: "Menus"
     label: "menus"
-    folder: "public/posts/menus/menus.json"
+    folder: "public/posts/menus"
+    media_folder: "menus.json"
     create: false    
     editor:
       preview: false
