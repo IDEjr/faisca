@@ -3,10 +3,10 @@
 <h1 align="center"> Projeto FAÍSCA </h1>
 
 <div align="center">
-  <br/><br/><br/>
+  <br/><br/>
   <a href="https://www.idejr.com.br/">
-  <img alt="IDE" src="https://user-images.githubusercontent.com/20328442/192912878-c3789fbd-3e3e-49dd-b357-ea1cf33c2285.png" width="500" align="center"/>
-  <br/><br/><br/><br/>
+  <img alt="IDE" src="https://user-images.githubusercontent.com/20328442/195282860-cacd7c9f-3ab4-4795-a484-fd8666af0225.png" width="500" align="center"/>
+  <br/><br/><br/>
 </div>
 
 
