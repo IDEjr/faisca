@@ -22,7 +22,10 @@ export default function Home(props)
     <>
       <Header menus={menus}/>      
       <Box type={"vertical"}>
-        {nomes.map( ({nome}, index) => <h1 key={index}>{nome}</h1>)}        
+        <h2>nome1</h2>    
+        <h2>nome2</h2>    
+        <h2>nome3</h2>    
+        <h2>nome4</h2>    
         <Wait/>
       </Box>
     </>
