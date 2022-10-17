@@ -22,10 +22,7 @@ export default function Home(props)
     <>
       <Header menus={menus}/>      
       <Box type={"vertical"}>
-        <h2>nome1</h2>    
-        <h2>nome2</h2>    
-        <h2>nome3</h2>    
-        <h2>nome4</h2>    
+        {nomes.sort((a,b) => {if(a.nome < b.nome) {return -1;} else {return 1}}).map( ({nome}, index) => <h1 key={index}>{nome}</h1>)}        
         <Wait/>
       </Box>
     </>
