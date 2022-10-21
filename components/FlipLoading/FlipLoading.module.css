@@ -1,10 +1,13 @@
 .rectangle{
-    background-image: url('../../public/images/FlipLoading/logo_faisca.png');
-    background-size: cover;
-    
+  background-image: url('../../public/images/FlipLoading/logo_faisca.png');
+  background-size: cover;
 
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
+
+}
+
+.spin_animation{
 
     animation: spin 3s linear infinite;
 }

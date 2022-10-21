@@ -25,7 +25,7 @@ export default function Home(props)
       <Box type={"vertical"}>
         {nomes.sort((a,b) => {if(a.nome < b.nome) {return -1;} else {return 1}}).map( ({nome}, index) => <h1 key={index}>{nome}</h1>)}        
         <Wait/>
-        <FlipLoading/>
+        <FlipLoading/>       
       </Box>
     </>
   )

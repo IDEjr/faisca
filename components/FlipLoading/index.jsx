@@ -1,8 +1,15 @@
 import style from './FlipLoading.module.css'
 
-export default function FlipLoading()
+function div_default()
+{
+    return <div className={style.rectangle}/>
+}
+
+export default function FlipLoading(props)
 {
     return (
-        <div className={style.rectangle}/>
+        <div className={style.spin_animation}>
+            {props.component ? props.component : div_default()}
+        </div>
     )
 }
