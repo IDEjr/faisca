@@ -1,6 +1,6 @@
-import Header from './../components/header';
-import Box from './../components/box';
-import Wait from './../components/wait'
+import Header from '../components/header/header';
+import Box from '../components/box';
+import Wait from '../components/wait'
 
 import { handleJSONfiles } from '../functions/jsonHandler';
 
