@@ -4,10 +4,11 @@ import styles from './writes.module.css';
 export default function TypeWrite({text,cursor})
 {
 	const animate = {
-		animation: `typing ${text.length/10}s steps(${text.length}, end) ${cursor ?`, blink 1s step-end infinite` :''}`,
+		animation: `typing ${text.length/10}s steps(${text.length}, end)`,
 		};
 	if(cursor){
 		animate.borderRight = '.15em solid black'; 
+		animate.animation = animate.animation + `, blinking 1s step-end infinite`;
 	}
 	return(
 		<div className={styles.holder}>
@@ -17,9 +18,10 @@ export default function TypeWrite({text,cursor})
 						0% { width: 0; }
 						100% { width: 100%; }
 					}
-					@keyframe blink{
-						from, to {border-color: transparent }
-						50% {border-color: black}
+					@keyframes blinking{
+						0%   {border-color: transparent; }
+						50%  {border-color: black;       }
+						100% {border-color: transparent; }
 					}
 				`}
 			</style>
