@@ -3,3 +3,9 @@
 	justify-content: center;
 	padding-top: 5em;
 }
+.base{
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .10em;
+}
