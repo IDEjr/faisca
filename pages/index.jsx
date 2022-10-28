@@ -3,6 +3,7 @@ import Box from './../components/box';
 import Wait from './../components/wait'
 
 import { handleJSONfiles } from '../functions/jsonHandler';
+import CustomCursor from '../components/CustomCursor';
 
 export function getStaticProps() {
 
