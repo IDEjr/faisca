@@ -1,6 +1,7 @@
-import Header from './../components/header';
-import Box from './../components/box';
-import Wait from './../components/wait'
+import Header from '../components/header/header';
+import Box from '../components/box';
+import Wait from '../components/wait'
+import FlipLoading from '../components/FlipLoading'
 
 import { handleJSONfiles } from '../functions/jsonHandler';
 
@@ -24,6 +25,7 @@ export default function Home(props)
       <Box type={"vertical"}>
         {nomes.sort((a,b) => {if(a.nome < b.nome) {return -1;} else {return 1}}).map( ({nome}, index) => <h1 key={index}>{nome}</h1>)}        
         <Wait/>
+        <FlipLoading/>       
       </Box>
     </>
   )

@@ -1,7 +1,7 @@
 import react from 'react';
 import Link from 'next/link';
 
-import style from './../styles/header.module.css';
+import style from './header.module.css';
 
 export default function Header(props)
 {
