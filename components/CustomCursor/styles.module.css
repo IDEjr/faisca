@@ -32,6 +32,8 @@
     
 /*quando passamos o mouse por cima do botao, 
 ele muda de cor e o cursor vira uma imagem*/    
+/*a imagem deve ter no maximo 120x120 pixels*/
+/*a imagem deve estar no formato png ou cur*/
 
   .btn1:hover{
     background-color: blue;
