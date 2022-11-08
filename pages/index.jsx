@@ -1,7 +1,9 @@
 import Header from '../components/header/header';
 import Box from '../components/box';
 import Wait from '../components/wait'
+import TypeWrite from '../components/TypeWrite';
 import FlipLoading from '../components/FlipLoading'
+
 
 import { handleJSONfiles } from '../functions/jsonHandler';
 
@@ -27,6 +29,7 @@ export default function Home(props)
         <Wait/>
         <FlipLoading/>       
       </Box>
+      <TypeWrite text={"dingus fungus bungus omega cuckus!"} cursor={true}/>
     </>
   )
 }
