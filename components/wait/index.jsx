@@ -1,4 +1,4 @@
-import style from '../styles/wait.module.css';
+import style from './wait.module.css';
 
 export default function Wait()
 {
