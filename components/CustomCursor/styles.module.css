@@ -1,0 +1,51 @@
+/*Estilo dos botoes, nao eh o foco do componente*/
+  .btn{
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-weight: bold;
+    
+  }
+  
+    .btn1{
+      background-color: blueviolet;
+      border-radius: 10px;
+      border-bottom: 5px solid #5c5c5c;
+      position: absolute;
+      left: 50px;
+      top: 100px;
+      
+    }
+    .btn2{
+      background-color: rgb(226, 128, 43);
+      border-radius: 10px;
+      border-bottom: 5px solid #835306;
+      position: absolute;
+      left: 50px;
+      top: 200px;
+      
+    }
+
+    
+/*quando passamos o mouse por cima do botao, 
+ele muda de cor e o cursor vira uma imagem*/    
+/*a imagem deve ter no maximo 120x120 pixels*/
+/*a imagem deve estar no formato png ou cur*/
+
+  .btn1:hover{
+    background-color: blue;
+    cursor: auto;
+    cursor: url(circulo_branco2.png) 20 20, auto;
+    /*imagem eh 40x40 pixels, entao colocamos 20 20 para que fique centralizado no cursor*/
+  }
+  
+  .btn2:hover{
+    background-color: rgb(211, 69, 22);
+    cursor: auto;
+    cursor: url(pokemon2.png) 25 25, auto;
+    /*imagem eh 50x50 pixels, entao colocamos 25 25 para que fique centralizado no cursor*/
+    
+  }

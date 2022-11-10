@@ -6,6 +6,7 @@ import FlipLoading from '../components/FlipLoading'
 
 
 import { handleJSONfiles } from '../functions/jsonHandler';
+import CustomCursor from '../components/CustomCursor';
 
 export function getStaticProps() {
 
